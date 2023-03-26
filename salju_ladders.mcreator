@@ -1,0 +1,69 @@
+{
+  "mod_elements": [
+    {
+      "name": "LadderClick",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ladder_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "salju_ladders",
+    "modName": "Better Ladders",
+    "version": "2.2.0",
+    "description": "Improves ladder placement.",
+    "author": "Jusey1",
+    "websiteURL": "https://discord.gg/s7QaYGUzZU",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Jusey1",
+    "modElementsPackage": "net.salju.ladders",
+    "lockBaseModFiles": true
+  },
+  "mcreatorVersion": 202300110219
+}
