@@ -35,8 +35,8 @@ public class LadderClickProcedure {
 		double y = event.getPos().getY();
 		double z = event.getPos().getZ();
 		BlockState block = event.getLevel().getBlockState(event.getPos());
-		BlockPos lower = (new BlockPos(x, y - 1, z));
-		BlockPos upper = (new BlockPos(x, y + 1, z));
+		BlockPos lower = (BlockPos.containing(x, y - 1, z));
+		BlockPos upper = (BlockPos.containing(x, y + 1, z));
 		if (block.is(BlockTags.create(new ResourceLocation("forge:ladder"))) && ladder.is(ItemTags.create(new ResourceLocation("forge:ladder"))) && block.getBlock().asItem() == ladder.getItem()) {
 			if (world.isEmptyBlock(lower)) {
 				world.setBlock(lower, block, 3);
@@ -52,7 +52,7 @@ public class LadderClickProcedure {
 								return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
 							return Direction.NORTH;
 						}
-					}.getDirection(new BlockPos(x, y, z)));
+					}.getDirection(BlockPos.containing(x, y, z)));
 					BlockState bs = world.getBlockState(lower);
 					Property<?> _property = bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty dp && dp.getPossibleValues().contains(dr)) {
@@ -84,7 +84,7 @@ public class LadderClickProcedure {
 								return Direction.fromAxisAndDirection(_axis, Direction.AxisDirection.POSITIVE);
 							return Direction.NORTH;
 						}
-					}.getDirection(new BlockPos(x, y, z)));
+					}.getDirection(BlockPos.containing(x, y, z)));
 					BlockState bs = world.getBlockState(upper);
 					Property<?> _property = bs.getBlock().getStateDefinition().getProperty("facing");
 					if (_property instanceof DirectionProperty dp && dp.getPossibleValues().contains(dr)) {
