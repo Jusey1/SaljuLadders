@@ -49,7 +49,7 @@
   "workspaceSettings": {
     "modid": "salju_ladders",
     "modName": "Better Ladders",
-    "version": "2.2.0",
+    "version": "2.4.0",
     "description": "Improves ladder placement.",
     "author": "Jusey1",
     "websiteURL": "https://discord.gg/s7QaYGUzZU",
@@ -60,10 +60,10 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.20.1",
     "credits": "Jusey1",
     "modElementsPackage": "net.salju.ladders",
     "lockBaseModFiles": true
   },
-  "mcreatorVersion": 202300110219
+  "mcreatorVersion": 202300223515
 }
