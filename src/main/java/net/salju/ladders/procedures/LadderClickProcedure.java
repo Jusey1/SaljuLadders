@@ -37,7 +37,7 @@ public class LadderClickProcedure {
 		BlockState block = event.getLevel().getBlockState(event.getPos());
 		BlockPos lower = (BlockPos.containing(x, y - 1, z));
 		BlockPos upper = (BlockPos.containing(x, y + 1, z));
-		if (block.is(BlockTags.create(new ResourceLocation("forge:ladder"))) && ladder.is(ItemTags.create(new ResourceLocation("forge:ladder"))) && block.getBlock().asItem() == ladder.getItem()) {
+		if (block.is(BlockTags.create(new ResourceLocation("minecraft:ladders"))) && ladder.is(ItemTags.create(new ResourceLocation("minecraft:ladders"))) && block.getBlock().asItem() == ladder.getItem()) {
 			if (world.isEmptyBlock(lower)) {
 				world.setBlock(lower, block, 3);
 				{

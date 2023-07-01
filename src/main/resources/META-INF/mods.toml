@@ -1,22 +1,20 @@
 modLoader="javafml"
-loaderVersion="[45,)"
+loaderVersion="[47,)"
 license="MIT License"
 
 [[mods]]
 modId="salju_ladders"
-version="2.3.0"
+version="2.4.0"
 displayName="Better Ladders"
 credits="Jusey1"
 displayURL="https://discord.gg/s7QaYGUzZU"
 authors="Jusey1"
-description='''
-Improves ladder placement.
-'''
+description="Improves ladder placement."
 
 [[dependencies.salju_ladders]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4]"
+    versionRange="[1.20.1]"
     ordering="NONE"
     side="BOTH"
 
